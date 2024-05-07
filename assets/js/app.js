@@ -263,6 +263,23 @@ const handleSliderProduct = function () {
 					nextEl: elmSlider + " .slider-button_next",
 					prevEl: elmSlider + " .slider-button_prev",
 				},
+				breakpoints: {
+					1359: {
+						slidesPerView: 4,
+					},
+					991: {
+						slidesPerView: 3.5,
+					},
+					768: {
+						slidesPerView: 2.5,
+					},
+					375: {
+						slidesPerView: 1.5,
+					},
+					320: {
+						slidesPerView: 1,
+					}
+				}
 			});
 		});
 	}
@@ -409,6 +426,55 @@ const handleCart = function () {
 	}
 }
 
+const handleInitDateRangePicker = function (elmInput) {
+	let format = 'DD-MM-YYYY';
+	const initDateRangePicker = elmInput.daterangepicker({
+		singleDatePicker: true,
+		alwaysShowCalendars: true,
+		timePicker: false,
+		timePicker24Hour: false,
+		timePickerSeconds: false,
+		parentEl: 'body',
+		autoApply: true,
+		locale: {
+			format: format,
+			daysOfWeek: [
+				"CN",
+				"T2",
+				"T3",
+				"T4",
+				"T5",
+				"T6",
+				"T7"
+			],
+			monthNames: [
+				"Tháng 1",
+				"Tháng 2",
+				"Tháng 3",
+				"Tháng 4",
+				"Tháng 5",
+				"Tháng 6",
+				"Tháng 7",
+				"Tháng 8",
+				"Tháng 9",
+				"Tháng 10",
+				"Tháng 11",
+				"Tháng 12"
+			],
+			applyLabel: 'Áp dụng',
+			cancelLabel: 'Đóng',
+		}
+	});
+
+	if (typeof type != "undefined" && type === 'time') {
+		initDateRangePicker.on('show.daterangepicker', function (ev, picker) {
+			picker.container.find(".drp-calendar").addClass('px-3');
+			picker.container.find(".calendar-table").hide();
+		});
+	}
+}
+
+
 $(function () {
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
 	handleCallMenu();
@@ -429,4 +495,12 @@ $(function () {
 	handleCounter($('#handleCounter'), $('#handleCounter .handleCounterItem'));
 	handleSliderHero();
 	handleSliderProduct();
+
+	$('.initDateRangePicker').each(function () {
+		let elmInput = $(this);
+
+		elmInput.on('focus', function () {
+			handleInitDateRangePicker(elmInput)
+		})
+	});
 });

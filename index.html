@@ -13,7 +13,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
 	<meta property="og:description" content="Template Golf">
-	<meta property="og:image" content="./assets/images/logo.png">
+	<meta property="og:image" content="./assets/images/logo.svg">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -44,7 +45,124 @@
 <body>
 
 <div id="header" class="header">
-	<div class="header-top">
+	<div class="header-inner">
+		<div class="header-logo">
+			<a href="" class="d-inline-block align-middle">
+				<img src="./assets/images/logo.svg" class="mw-100 w-auto" alt="">
+			</a>
+		</div>
+		<div class="header-navigation" id="header-navigation">
+			<ul>
+				<li>
+					<a href="">
+						GIỚI THIỆU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						SÂN GOLF
+					</a>
+				</li>
+				<li>
+					<a href="">
+						TIỆN ÍCH <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Sân Tập</a>
+						</li>
+						<li>
+							<a href="">Giáo Viên</a>
+						</li>
+						<li>
+							<a href="">Lưu Trú</a>
+						</li>
+						<li>
+							<a href="">Quầy Bar</a>
+						</li>
+						<li>
+							<a href="">Nhà Hàng</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						BẢNG GIÁ & KHUYẾN MÃI
+					</a>
+				</li>
+				<li>
+					<a href="">
+						GIẢI ĐẤU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						CỬA HÀNG <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Gậy Golf</a>
+						</li>
+						<li>
+							<a href="">Đồ Tập Golf</a>
+						</li>
+						<li>
+							<a href="">Thời Trang Golf</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						TIN TỨC - SỰ KIỆN
+					</a>
+				</li>
+				<li>
+					<a href="">
+						LIÊN HỆ
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-toolbar">
+			<div class="header-cart">
+				<button type="button" id="callCart" class="header-cart_button">
+					<i class="far fa-shopping-bag"></i>
+					<span>5</span>
+				</button>
+			</div>
+			<div class="header-user">
+				<a href="" class="button-theme button-theme_small button-theme_secondary">
+					Thành viên
+				</a>
+				<ul>
+					<li>
+						<a href="">
+							Đăng nhập
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Đăng ký
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-language">
+				<a href="" class="header-language_link active">
+					VI
+				</a>
+				<a href="" class="header-language_link">
+					EN
+				</a>
+			</div>
+			<div class="header-hamburger d-flex d-lg-none">
+				<span class="hamburger-button" id="hamburger-button">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</div>
+		</div>
 	</div>
 	<div class="header-overlay" id="header-overlay"></div>
 </div>
@@ -74,12 +192,177 @@
 						Đăng ký thông tin đặt chỗ
 					</div>
 				</div>
+				<div class="row g-1">
+					<div class="col-lg-6">
+						<div class="form-item">
+							<div class="form-item_input w-100">
+								<span class="form-item_input__icon"><i
+										class="fas fa-calendar-alt"></i></span>
+								<input type="text" class="form-control w-100 initDateRangePicker"
+								       placeholder="Ngày chơi">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-item">
+							<div class="form-item_label">
+								Giờ Chơi
+							</div>
+							<div class="form-item_wrapper w-100">
+								<div class="form-item_input w-100">
+									<select name="" id="" class="form-select">
+										<option value="">Giờ</option>
+										<option value="00 giờ">00 giờ</option>
+										<option value="01 giờ">01 giờ</option>
+										<option value="02 giờ">02 giờ</option>
+										<option value="03 giờ">03 giờ</option>
+										<option value="04 giờ">04 giờ</option>
+										<option value="05 giờ">05 giờ</option>
+										<option value="06 giờ">06 giờ</option>
+										<option value="07 giờ">07 giờ</option>
+										<option value="08 giờ">08 giờ</option>
+										<option value="09 giờ">09 giờ</option>
+										<option value="10 giờ">10 giờ</option>
+										<option value="11 giờ">11 giờ</option>
+										<option value="12 giờ">12 giờ</option>
+										<option value="13 giờ">13 giờ</option>
+										<option value="14 giờ">14 giờ</option>
+										<option value="15 giờ">15 giờ</option>
+										<option value="16 giờ">16 giờ</option>
+										<option value="17 giờ">17 giờ</option>
+										<option value="18 giờ">18 giờ</option>
+										<option value="19 giờ">19 giờ</option>
+										<option value="20 giờ">20 giờ</option>
+										<option value="21 giờ">21 giờ</option>
+										<option value="22 giờ">22 giờ</option>
+										<option value="23 giờ">23 giờ</option>
+										<option value="24 giờ">24 giờ</option>
+									</select>
+								</div>
+								<div class="form-item_input w-100">
+									<select name="" id="" class="form-select">
+										<option value="">Phút</option>
+										<option value="00 phút">00 phút</option>
+										<option value="01 phút">01 phút</option>
+										<option value="02 phút">02 phút</option>
+										<option value="03 phút">03 phút</option>
+										<option value="04 phút">04 phút</option>
+										<option value="05 phút">05 phút</option>
+										<option value="06 phút">06 phút</option>
+										<option value="07 phút">07 phút</option>
+										<option value="08 phút">08 phút</option>
+										<option value="09 phút">09 phút</option>
+										<option value="10 phút">10 phút</option>
+										<option value="11 phút">11 phút</option>
+										<option value="12 phút">12 phút</option>
+										<option value="13 phút">13 phút</option>
+										<option value="14 phút">14 phút</option>
+										<option value="15 phút">15 phút</option>
+										<option value="16 phút">16 phút</option>
+										<option value="17 phút">17 phút</option>
+										<option value="18 phút">18 phút</option>
+										<option value="19 phút">19 phút</option>
+										<option value="20 phút">20 phút</option>
+										<option value="21 phút">21 phút</option>
+										<option value="22 phút">22 phút</option>
+										<option value="23 phút">23 phút</option>
+										<option value="24 phút">24 phút</option>
+										<option value="25 phút">25 phút</option>
+										<option value="26 phút">26 phút</option>
+										<option value="27 phút">27 phút</option>
+										<option value="28 phút">28 phút</option>
+										<option value="29 phút">29 phút</option>
+										<option value="30 phút">30 phút</option>
+										<option value="31 phút">31 phút</option>
+										<option value="32 phút">32 phút</option>
+										<option value="33 phút">33 phút</option>
+										<option value="34 phút">34 phút</option>
+										<option value="35 phút">35 phút</option>
+										<option value="36 phút">36 phút</option>
+										<option value="37 phút">37 phút</option>
+										<option value="38 phút">38 phút</option>
+										<option value="39 phút">39 phút</option>
+										<option value="40 phút">40 phút</option>
+										<option value="41 phút">41 phút</option>
+										<option value="42 phút">42 phút</option>
+										<option value="43 phút">43 phút</option>
+										<option value="44 phút">44 phút</option>
+										<option value="45 phút">45 phút</option>
+										<option value="46 phút">46 phút</option>
+										<option value="47 phút">47 phút</option>
+										<option value="48 phút">48 phút</option>
+										<option value="49 phút">49 phút</option>
+										<option value="50 phút">50 phút</option>
+										<option value="51 phút">51 phút</option>
+										<option value="52 phút">52 phút</option>
+										<option value="53 phút">53 phút</option>
+										<option value="54 phút">54 phút</option>
+										<option value="55 phút">55 phút</option>
+										<option value="56 phút">56 phút</option>
+										<option value="57 phút">57 phút</option>
+										<option value="58 phút">58 phút</option>
+										<option value="59 phút">59 phút</option>
+										<option value="60 phút">60 phút</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="form-item">
+							<div class="form-item_input w-100">
+								<input type="text" class="form-control w-100" placeholder="Tên Khách đặt Booking (*)">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-item">
+							<div class="form-item_input w-100">
+								<input type="text" class="form-control w-100" placeholder="Email (*)">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-item">
+							<div class="form-item_input w-100">
+								<input type="text" class="form-control w-100" placeholder="Số điện thoại (*)">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="form-item">
+							<div class="form-item_label">
+								Số lượng người chơi
+							</div>
+							<div class="form-item_wrapper ms-auto">
+								<div class="form-item_input">
+									<input type="text" class="form-control w-100" placeholder="Số lượng">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="form-item">
+							<div class="form-item_wrapper w-100">
+								<div class="form-item_input w-100">
+									<textarea name="" id="" class="form-control" rows="4"
+									          placeholder="Ghi chú thêm"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 mt-4 text-center">
+						<button type="submit" class="button-theme button-theme_secondary button-theme_large">
+							GỬI ĐĂNG KÝ
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="section-box position-relative pseudo">
 		<div class="container">
-			<div class="row g-4 row-cols-lg-3 row-cols-1 row-col-sm-2 justify-content-center">
+			<div class="row g-4 row-cols-md-3 row-cols-1 row-cols-sm-2 justify-content-center">
 				<div class="col">
 					<div class="box-item">
 						<div class="box-icon">
@@ -142,7 +425,7 @@
 					vùng đất cố đô.
 				</div>
 			</div>
-			<div class="row row-cols-lg-4 g-1">
+			<div class="row row-cols-lg-4 row-cols-1 row-cols-sm-2 g-1">
 				<div class="col">
 					<div class="service-box">
 						<div class="ratio ratio-3x4">
@@ -288,7 +571,7 @@
 	</div>
 	<div class="section-counter" id="handleCounter">
 		<div class="container">
-			<div class="row g-3 row-cols-lg-4">
+			<div class="row g-3 row-cols-md-4 row-cols-2">
 				<div class="col">
 					<div class="counter-item">
 						<div class="counter-icon">
@@ -1936,7 +2219,7 @@
 					mattis, pulvinar dapibus leo.
 				</div>
 			</div>
-			<div class="row row-cols-lg-3 g-4">
+			<div class="row row-cols-lg-3 row-cols-1 row-cols-sm-2 g-4 justify-content-center">
 				<div class="col">
 					<div class="article-card card border-0 rounded-0 bg-white">
 						<div class="card-header p-0 bg-white rounded-0 border-0 position-relative">
@@ -2030,7 +2313,7 @@
 					<div class="footer-item">
 						<div class="footer-logo">
 							<a href="" class="d-inline-flex align-middle">
-								<img src="./assets/images/logo.png" height="100" class="mw-100" alt="">
+								<img src="./assets/images/logo.svg" height="100" class="mw-100" alt="">
 							</a>
 						</div>
 						<div class="footer-text">
@@ -2053,7 +2336,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-6">
 					<div class="footer-item">
 						<div class="footer-title">
 							Quick Links
@@ -2077,7 +2360,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-6">
 					<div class="footer-item">
 						<div class="footer-title">
 							Address
@@ -2124,7 +2407,7 @@
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<div class="row g-4">
+			<div class="row g-2 g-lg-4 flex-column-reverse flex-lg-row">
 				<div class="col-lg-5">
 					<div class="footer-copyright">
 						Copyright © 2024 Golftio. All Rights Reserved
@@ -2196,6 +2479,8 @@
 </div>
 
 <script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
 <script type="text/javascript"
         src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
