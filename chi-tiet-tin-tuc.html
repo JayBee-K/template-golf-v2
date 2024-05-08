@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Golf</title>
+	<meta name="description" content="Template Golf">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Golf">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Golf">
+	<meta property="og:image" content="./assets/images/logo.svg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+	      rel="stylesheet">
+
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
+	<style>
+		:root {
+			--primary-color: #0e7a31;
+			--primary-hover: #0b6427;
+			--primary-rgb: 14, 122, 49;
+			--secondary-color: #E4A662;
+			--secondary-hover: #c28440;
+			--secondary-rgb: 228, 166, 98;
+		}
+	</style>
+</head>
+<body>
+
+<div id="header" class="header">
+	<div class="header-inner">
+		<div class="header-logo">
+			<a href="" class="d-inline-block align-middle">
+				<img src="./assets/images/logo.svg" class="mw-100 w-auto" alt="">
+			</a>
+		</div>
+		<div class="header-navigation" id="header-navigation">
+			<ul>
+				<li>
+					<a href="">
+						GIỚI THIỆU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						SÂN GOLF
+					</a>
+				</li>
+				<li>
+					<a href="">
+						TIỆN ÍCH <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Sân Tập</a>
+						</li>
+						<li>
+							<a href="">Giáo Viên</a>
+						</li>
+						<li>
+							<a href="">Lưu Trú</a>
+						</li>
+						<li>
+							<a href="">Quầy Bar</a>
+						</li>
+						<li>
+							<a href="">Nhà Hàng</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						BẢNG GIÁ & KHUYẾN MÃI
+					</a>
+				</li>
+				<li>
+					<a href="">
+						GIẢI ĐẤU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						CỬA HÀNG <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Gậy Golf</a>
+						</li>
+						<li>
+							<a href="">Đồ Tập Golf</a>
+						</li>
+						<li>
+							<a href="">Thời Trang Golf</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						TIN TỨC - SỰ KIỆN
+					</a>
+				</li>
+				<li>
+					<a href="">
+						LIÊN HỆ
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-toolbar">
+			<div class="header-cart">
+				<button type="button" id="callCart" class="header-cart_button">
+					<i class="far fa-shopping-bag"></i>
+					<span>5</span>
+				</button>
+			</div>
+			<div class="header-user">
+				<a href="" class="button-theme button-theme_small button-theme_secondary">
+					Thành viên
+				</a>
+				<ul>
+					<li>
+						<a href="">
+							Đăng nhập
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Đăng ký
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-language">
+				<a href="" class="header-language_link active">
+					VI
+				</a>
+				<a href="" class="header-language_link">
+					EN
+				</a>
+			</div>
+			<div class="header-hamburger d-flex d-lg-none">
+				<span class="hamburger-button" id="hamburger-button">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+	<div class="section-page">
+		<div class="section-breadcrumb">
+			<div class="container">
+				<ol class="breadcrumb bg-transparent rounded-0 mb-0 p-0">
+					<li class="breadcrumb-item">
+						<a href="#">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item">
+						<a href="#">Danh sách tin tức</a>
+					</li>
+					<li class="breadcrumb-item">
+						Chi tiết tin tức
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="section-gap_small">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-lg-8">
+						<div class="article-detail">
+							<h1 class="article-title">
+								DỊCH VỤ THIẾT KẾ WEBSITE ĐỔI THẺ CÀO THÀNH TIỀN MẶT
+							</h1>
+							<div class="article-desc">
+								<div class="row g-2 g-lg-3 align-items-center flex-column flex-md-row">
+									<div class="col-auto flex-shrink-0">
+										<div class="article-meta hstack gap-15px">
+											<div class="article-meta_item">
+												<i class="far fa-clock"></i>
+												<span>11-10-2023</span>
+											</div>
+											<div class="article-meta_item">
+												<i class="far fa-eye"></i>
+												<span>23 Lượt xem</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-auto flex-grow-1 d-flex justify-content-md-end">
+										<div class="article-social">
+											<ul class="list-unstyled mb-0 d-flex flex-sm-nowrap justify-content-sm-end justify-content-center flex-wrap gap-5px">
+												<li class="article-social_share">
+													Chia sẻ:
+												</li>
+												<li>
+													<div class="fb-share-button fb_iframe_widget"
+													     data-href="https://jaybee-k.github.io/template-nencer-v3"
+													     data-layout="button" data-size="small"
+													     fb-xfbml-state="rendered"
+													     fb-iframe-plugin-query="app_id=&amp;container_width=46&amp;href=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey&amp;size=small">
+														<span style="vertical-align: bottom; width: 76px; height: 20px;">
+															<iframe name="fb76b12d044284675" width="1000px"
+															        height="1000px"
+															        data-testid="fb:share_button Facebook Social Plugin"
+															        title="fb:share_button Facebook Social Plugin"
+															        frameborder="0" allowtransparency="true"
+															        allowfullscreen="true" scrolling="no"
+															        allow="encrypted-media"
+															        src="https://www.facebook.com/v16.0/plugins/share_button.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df8e1a6905aee2ba28%26domain%3D%26is_canvas%3Dfalse%26origin%3Dfile%253A%252F%252F%252Ffcf58bc0ce7b5c925%26relation%3Dparent.parent&amp;container_width=46&amp;href=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey&amp;size=small"
+															        style="border: none; visibility: visible; width: 76px; height: 20px;"
+															        class=""></iframe>
+														</span></div>
+												</li>
+												<li>
+													<div class="zalo-share-button"
+													     data-href="https://jaybee-k.github.io/template-nencer-v3"
+													     data-oaid="579745863508352884" data-color="blue"
+													     data-customize="false"
+													     style="position: relative; display: inline-block; width: 70px; height: 20px;">
+														<iframe id="c890c26d-2034-4bbc-a382-01be9232c7a2"
+														        name="c890c26d-2034-4bbc-a382-01be9232c7a2"
+														        frameborder="0" allowfullscreen="" scrolling="no"
+														        width="70px" height="20px"
+														        src="https://button-share.zalo.me/share_inline?id=c890c26d-2034-4bbc-a382-01be9232c7a2&amp;layout=1&amp;color=blue&amp;customize=false&amp;width=70&amp;height=20&amp;isDesktop=true&amp;url=https%3A%2F%2Fjaybee-k.github.io%2Ftemplate-nencer-v3&amp;d=eyJ1cmwiOiJodHRwczovL2pheWJlZS1rLmdpdGh1Yi5pby90ZW1wbGF0ZS1uZW5jZXItdjMifQ%253D%253D&amp;shareType=0"
+														        style="position: absolute; z-index: 99; top: 0px; left: 0px;"></iframe>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="detail-content" id="detailContent">
+								<blockquote>
+									Đây là nội dung trích dẫn ây là nội dung trích dẫn <strong>Nencer Software</strong>
+									là
+									một công ty chuyên về phát triển và thiết kế
+									website, với nhiều năm
+									kinh nghiệm trong thiết kế web và phần mềm quản lý. Chúng tôi tự hào là một trong
+									những
+									công ty hàng đầu trong việc cung cấp dịch vụ thiết kế website đổi thẻ hiện đại, đáng
+									tin
+									cậy, và phù hợp với mọi nhu cầu của khách hàng.
+								</blockquote>
+								<h2>
+									Tiêu đề này dùng thẻ heading h3
+								</h2>
+								<h3>
+									Tiêu đề này dùng thẻ heading h3
+								</h3>
+								<h4>
+									Tiêu đề này dùng thẻ heading h4
+								</h4>
+								<h5>
+									Tiêu đề này dùng thẻ heading h5
+								</h5>
+								<h6>
+									Tiêu đề này dùng thẻ heading h6 (kích thước chữ bằng với nội dung)
+								</h6>
+								<ul>
+									<li>
+										Đây là danh sách không có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách không có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách không có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách không có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách không có số thứ tự
+									</li>
+								</ul>
+								<ol>
+									<li>
+										Đây là danh sách có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách có số thứ tự
+									</li>
+									<li>
+										Đây là danh sách có số thứ tự
+									</li>
+								</ol>
+								<p>
+									Dịch vụ <a href="">thiết kế website đổi thẻ</a> của Nencer Software mang đến cho bạn
+									một
+									giải pháp hoàn
+									hảo để xây dựng trang web đổi thẻ hiện đại, chuyên nghiệp và tối ưu hóa cho trải
+									nghiệm
+									người dùng tốt nhất. Với sự cam kết về chất lượng và sáng tạo, chúng tôi hy vọng có
+									cơ
+									hội hợp tác và giúp bạn đạt được mục tiêu trực tuyến của mình.
+								</p>
+								<p>
+									<a style="cursor: zoom-in"
+									   href="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+									   data-caption="" data-fancybox="images-detail"><img
+											src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+											alt=""></a>
+								</p>
+								<h2>
+									Lợi ích của việc sử dụng dịch vụ thiết kế website đổi thẻ từ Nencer Software
+								</h2>
+								<p>
+									Khi bạn chọn dịch vụ thiết kế website đổi thẻ từ Nencer Software, bạn sẽ được hưởng
+									nhiều lợi ích quan trọng:
+								</p>
+								<h3>
+									1: Thiết kế chuyên nghiệp
+								</h3>
+								<p>
+									Chúng tôi có đội ngũ thiết kế chuyên nghiệp với nhiều năm kinh nghiệm trong việc tạo
+									ra
+									các trang web đổi thẻ chất lượng cao, phù hợp với mọi nhu cầu của bạn.
+								</p>
+								<h3>2: Công nghệ mới nhất</h3>
+								<p>
+									Nencer Software luôn cập nhật với công nghệ và xu hướng mới nhất trong <em>thiết kế
+									                                                                           website
+									                                                                           đổi
+									                                                                           thẻ</em>.
+									Chúng tôi sử dụng các công cụ và ngôn ngữ lập trình hiện đại như
+									HTML5, CSS3, JavaScript, và Responsive Web Design để đảm bảo trang web của bạn luôn
+									đẹp
+									và hiệu quả trên mọi thiết bị.
+								</p>
+								<p>
+									Các phần mềm của chúng tôi cung cấp đều được thiết kế rất chuyên nghiệp và tỉ mỉ.
+									Đối
+									với những khách hàng VIP, chúng tôi nhận hỗ trợ từ 24/7 không ngày nghỉ lễ. Chúng
+									tôi sẽ
+									giúp cho khách hàng tối ưu chi phí và nhân lực bằng việc tự động hóa sản phẩm. Quý
+									khách
+									muốn mua sản phẩm chỉ cần thanh toán trực tuyến. Hệ thống sẽ nhận và hỗ trợ 24/24.
+								</p>
+								<div class="table-responsive">
+									<div class="table-responsive">
+										<table align="center" border="1" cellpadding="1" cellspacing="1"
+										       style="width: 100%;" class="table table-bordered">
+											<tbody>
+											<tr>
+												<td style="text-align: center;"><span style="font-size:18px;"><strong>Quy
+												                                                                      mô</strong></span>
+												</td>
+												<td style="text-align: center;"><span style="font-size:18px;"><strong>Tính
+												                                                                      năng&nbsp;
+												                                                                      phần
+												                                                                      mềm</strong></span>
+												</td>
+												<td style="text-align: center;"><span style="font-size:18px;"><strong>Báo
+												                                                                      giá
+												                                                                      phần
+												                                                                      mềm</strong></span>
+												</td>
+											</tr>
+											<tr>
+												<td style="text-align: center;"><strong><span style="font-size:16px;">Phòng
+												                                                                      khám
+												                                                                      chuyên
+												                                                                      khoa</span></strong>
+												</td>
+												<td>
+													<ul>
+														<li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+														<li><span style="font-size:16px;">Quản lý kế toán - Thu
+														                                  ngân</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
+														                                  tế</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
+														                                  viên</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+														                                  thuốc</span>
+														</li>
+														<li><span style="font-size:16px;">Kết nối máy ngoại vi</span>
+														</li>
+														<li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+														<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
+														                                  bệnh</span>
+														</li>
+														<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+														                                  khám</span>
+														</li>
+													</ul>
+												</td>
+												<td><span style="font-size:16px;">2.000.000 VNĐ</span></td>
+											</tr>
+											<tr>
+												<td style="text-align: center;"><strong><span style="font-size:16px;">Phòng
+												                                                                      khám
+												                                                                      đa
+												                                                                      khoa</span></strong>
+												</td>
+												<td>
+													<ul>
+														<li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+														<li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
+														<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+														                                  ngoại
+														                                  trú</span></li>
+														<li><span style="font-size:16px;">Quản lý kế toán - Thu
+														                                  ngân</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
+														                                  tế</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
+														                                  viên</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+														                                  thuốc</span>
+														</li>
+														<li><span style="font-size:16px;">Kết nối máy ngoại vi</span>
+														</li>
+														<li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+														<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
+														                                  bệnh</span>
+														</li>
+														<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+														                                  khám</span>
+														</li>
+														<li><span style="font-size:16px;">In tem bệnh nhân</span></li>
+														<li><span style="font-size:16px;">Quản lý viện phí</span></li>
+														<li><span style="font-size:16px;">Liên thông BHXH</span></li>
+														<li><span style="font-size:16px;">Quản lý khám sức khỏe</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
+														<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+														                                  tuyến</span>
+														</li>
+													</ul>
+												</td>
+												<td><span style="font-size:16px;">10.000.000 VNĐ</span></td>
+											</tr>
+											<tr>
+												<td style="text-align: center;"><strong><span style="font-size:16px;">Bệnh
+												                                                                      viện</span></strong>
+												</td>
+												<td>
+													<ul>
+														<li><span style="font-size:16px;">Quản lý tiếp đón</span></li>
+														<li><span style="font-size:16px;">Quản lý khoa phòng</span></li>
+														<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+														                                  ngoại
+														                                  trú</span></li>
+														<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị nội
+														                                  trú</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý kế toán - Thu
+														                                  ngân</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư y
+														                                  tế</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ, nhân
+														                                  viên</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+														                                  thuốc</span>
+														</li>
+														<li><span style="font-size:16px;">Kết nối máy ngoại vi</span>
+														</li>
+														<li><span style="font-size:16px;">Thống kê, báo cáo</span></li>
+														<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ khám
+														                                  bệnh</span>
+														</li>
+														<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+														                                  khám</span>
+														</li>
+														<li><span style="font-size:16px;">In tem bệnh nhân</span></li>
+														<li><span style="font-size:16px;">Quản lý viện phí</span></li>
+														<li><span style="font-size:16px;">Liên thông BHXH</span></li>
+														<li><span style="font-size:16px;">Quản lý khám sức khỏe</span>
+														</li>
+														<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+														                                  tuyến</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý cấp cứu</span></li>
+														<li><span style="font-size:16px;">Quản lý đấu thầu</span></li>
+														<li><span style="font-size:16px;">Quản lý quá trình đào tạo
+														                                  tuyến</span>
+														</li>
+														<li><span style="font-size:16px;">Quản lý chương trình y
+														                                  tế</span>
+														</li>
+														<li><span style="font-size:16px;">Tích hợp thêm modun nâng
+														                                  cao</span>
+														</li>
+													</ul>
+												</td>
+												<td><span style="font-size:16px;">25.000.000 VNĐ</span></td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<p>
+									Công ty phần mềm trực tuyến Nencer Software là đơn vị hàng đầu chuyên thiết kế web
+									đổi
+									thẻ cào, làm web bán thẻ cào, làm web gạch thẻ tự động, web gạch cước tự động uy tín
+									chuyên nghiệp trên toàn quốc, đã thực hiện rất nhiều dự án thiết kế website gạch thẻ
+									cào, web nạp cước thành công cho khách hàng.
+								</p>
+								<p>
+									Với kinh nghiệm hơn 10 năm trong lĩnh vực lập trình web và đội ngũ kỹ thuật giỏi
+									chuyên
+									môn, chuyên nghiệp trong công việc Nencer Software sẽ đáp ứng tất cả các yêu cầu của
+									khách hàng. Ngoài ra chúng tôi sẽ hỗ trợ, hướng dẫn khách hàng vận hành, khai thác
+									hệ
+									thống với hiệu quả tốt nhất và tư vấn miễn phí khách hàng về marketing online.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="section-sidebar">
+							<div class="sidebar-item">
+								<div class="sidebar-item_heading">
+									Tin tức liên quan
+								</div>
+								<div class="sidebar-item_body">
+									<div class="article-item gap-15px hstack">
+										<div class="card-content flex-fill">
+											<a href="" class="card-title limit">
+												Ưu đãi tưng bừng - Chào mừng Đại lễ
+											</a>
+											<div class="card-time">
+												<i class="fal fa-calendar-alt"></i>
+												17 tháng tư, 2024
+											</div>
+										</div>
+										<div class="card-image flex-shrink-0">
+											<a href="" class="d-inline-flex align-middle rounded-2 overflow-hidden ratio ratio-3x2">
+												<img src="./assets/images/articles/articles-1.jpg"
+												     class="img-fluid transition-default"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="article-item gap-15px hstack">
+										<div class="card-content flex-fill">
+											<a href="" class="card-title limit">
+												ChiLinh Golf tạo dấu ấn tại Hội nghị Du lịch Golf châu Á (AGTC) 2024
+											</a>
+											<div class="card-time">
+												<i class="fal fa-calendar-alt"></i>
+												17 tháng tư, 2024
+											</div>
+										</div>
+										<div class="card-image flex-shrink-0">
+											<a href="" class="d-inline-flex align-middle rounded-2 overflow-hidden ratio ratio-3x2">
+												<img src="./assets/images/articles/articles-2.jpg"
+												     class="img-fluid transition-default"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="article-item gap-15px hstack">
+										<div class="card-content flex-fill">
+											<a href="" class="card-title limit">
+												ChiLinh Golf tạo dấu ấn tại Hội nghị Du lịch Golf châu Á (AGTC) 2024 ChiLinh Golf tạo dấu ấn tại Hội nghị Du lịch Golf châu Á (AGTC) 2024
+											</a>
+											<div class="card-time">
+												<i class="fal fa-calendar-alt"></i>
+												17 tháng tư, 2024
+											</div>
+										</div>
+										<div class="card-image flex-shrink-0">
+											<a href="" class="d-inline-flex align-middle rounded-2 overflow-hidden ratio ratio-3x2">
+												<img src="./assets/images/articles/articles-3.jpg"
+												     class="img-fluid transition-default"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="article-item gap-15px hstack">
+										<div class="card-content flex-fill">
+											<a href="" class="card-title limit">
+												Ưu đãi tưng bừng - Chào mừng Đại lễ
+											</a>
+											<div class="card-time">
+												<i class="fal fa-calendar-alt"></i>
+												17 tháng tư, 2024
+											</div>
+										</div>
+										<div class="card-image flex-shrink-0">
+											<a href="" class="d-inline-flex align-middle rounded-2 overflow-hidden ratio ratio-3x2">
+												<img src="./assets/images/articles/articles-1.jpg"
+												     class="img-fluid transition-default"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="article-item gap-15px hstack">
+										<div class="card-content flex-fill">
+											<a href="" class="card-title limit">
+												ChiLinh Golf tạo dấu ấn tại Hội nghị Du lịch Golf châu Á (AGTC) 2024
+											</a>
+											<div class="card-time">
+												<i class="fal fa-calendar-alt"></i>
+												17 tháng tư, 2024
+											</div>
+										</div>
+										<div class="card-image flex-shrink-0">
+											<a href="" class="d-inline-flex align-middle rounded-2 overflow-hidden ratio ratio-3x2">
+												<img src="./assets/images/articles/articles-2.jpg"
+												     class="img-fluid transition-default"
+												     alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row g-4">
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-logo">
+							<a href="" class="d-inline-flex align-middle">
+								<img src="./assets/images/logo.svg" height="100" class="mw-100" alt="">
+							</a>
+						</div>
+						<div class="footer-text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry...
+						</div>
+						<div class="footer-social">
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/facebook.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/youtube.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/tiktok.png" class="rounded-circle img-fluid" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Quick Links
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Home
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								About Us
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Facility
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Shop
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Contact
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Address
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(480) 555-0103
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(406) 555-0120
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								deanna.curtis@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								debra.holt@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								285 Great North Road, Grey Lynn, Auckland 1021
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-title">
+							Newsletter
+						</div>
+						<div class="footer-text">
+							Subscribe our newsletter to get our latest update & news
+						</div>
+						<div class="footer-form">
+							<form action="">
+								<div class="footer-form_inner">
+									<input type="email" placeholder="Your email address" class="form-control">
+									<button type="submit">
+										<i class="fas fa-paper-plane"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row g-2 g-lg-4 flex-column-reverse flex-lg-row">
+				<div class="col-lg-5">
+					<div class="footer-copyright">
+						Copyright © 2024 Golftio. All Rights Reserved
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="footer-link">
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Support
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Terms of Use
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="floating-cart" id="floatingCart">
+	<div class="cart-card card border-0 rounded-0 bg-white position-fixed top-0 end-0 mw-100 h-100 overflow-hidden">
+		<div class="card-header rounded-0 bg-white hstack justify-content-between">
+			<div class="card-title fw-bold mb-0">
+				GIỎ HÀNG
+			</div>
+			<button class="link-default" id="closeCart">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			</button>
+		</div>
+		<div class="card-body p-0 flex-fill vstack h-100">
+			<div class="card-list position-relative flex-fill">
+				<div class="card-scroll position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+					<div id="cardList"
+					     class="card-list position-absolute top-0 start-0 bottom-0 end-0 mh-100"></div>
+					<div class="card-empty text-center">
+						<div class="card-icon">
+							<img src="./assets/images/empty-cart.avif" class="img-fluid" alt="">
+						</div>
+						<div class="card-title">
+							Giỏ hàng của bạn đang trống
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-information">
+				<div class="card-total hstack justify-content-between">
+					<div class="card-text">
+						Tạm tính:
+					</div>
+					<div class="card-value">1.050.000đ</div>
+				</div>
+				<div class="card-button">
+					<a href="./thanh-toan.html" class="button-theme button-theme_primary w-100">
+						Thanh toán <i class="fal fa-angle-right lh-base ms-2 fz-20"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="floating-overlay" id="floatingOverlay"></div>
+</div>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

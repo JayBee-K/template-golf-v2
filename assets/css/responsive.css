@@ -391,6 +391,32 @@
 	.footer .footer-copyright {
 		text-align: center;
 	}
+
+	.section-gap_small {
+		padding: 20px 0;
+	}
+
+	.section-page .section-heading .heading-title {
+		font-size: 1.6em;
+	}
+
+	.contact-collapse .contact-collapse_item .contact-collapse_item__button {
+		font-size: 1.15em;
+	}
+
+	.contact-collapse .contact-collapse_item .contact-collapse_item__content,
+	.contact-collapse_desc {
+		font-size: 1.075em;
+	}
+
+	.article-detail .article-title {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.section-sidebar .sidebar-item .article-item .card-content .card-title {
+		font-size: 1.075em;
+	}
 }
 
 @media screen and (max-width: 768px) {

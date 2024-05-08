@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Golf</title>
+	<meta name="description" content="Template Golf">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Golf">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Golf">
+	<meta property="og:image" content="./assets/images/logo.svg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+	      rel="stylesheet">
+
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
+	<style>
+		:root {
+			--primary-color: #0e7a31;
+			--primary-hover: #0b6427;
+			--primary-rgb: 14, 122, 49;
+			--secondary-color: #E4A662;
+			--secondary-hover: #c28440;
+			--secondary-rgb: 228, 166, 98;
+		}
+	</style>
+</head>
+<body>
+
+<div id="header" class="header">
+	<div class="header-inner">
+		<div class="header-logo">
+			<a href="" class="d-inline-block align-middle">
+				<img src="./assets/images/logo.svg" class="mw-100 w-auto" alt="">
+			</a>
+		</div>
+		<div class="header-navigation" id="header-navigation">
+			<ul>
+				<li>
+					<a href="">
+						GIỚI THIỆU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						SÂN GOLF
+					</a>
+				</li>
+				<li>
+					<a href="">
+						TIỆN ÍCH <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Sân Tập</a>
+						</li>
+						<li>
+							<a href="">Giáo Viên</a>
+						</li>
+						<li>
+							<a href="">Lưu Trú</a>
+						</li>
+						<li>
+							<a href="">Quầy Bar</a>
+						</li>
+						<li>
+							<a href="">Nhà Hàng</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						BẢNG GIÁ & KHUYẾN MÃI
+					</a>
+				</li>
+				<li>
+					<a href="">
+						GIẢI ĐẤU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						CỬA HÀNG <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Gậy Golf</a>
+						</li>
+						<li>
+							<a href="">Đồ Tập Golf</a>
+						</li>
+						<li>
+							<a href="">Thời Trang Golf</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						TIN TỨC - SỰ KIỆN
+					</a>
+				</li>
+				<li>
+					<a href="">
+						LIÊN HỆ
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-toolbar">
+			<div class="header-cart">
+				<button type="button" id="callCart" class="header-cart_button">
+					<i class="far fa-shopping-bag"></i>
+					<span>5</span>
+				</button>
+			</div>
+			<div class="header-user">
+				<a href="" class="button-theme button-theme_small button-theme_secondary">
+					Thành viên
+				</a>
+				<ul>
+					<li>
+						<a href="">
+							Đăng nhập
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Đăng ký
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-language">
+				<a href="" class="header-language_link active">
+					VI
+				</a>
+				<a href="" class="header-language_link">
+					EN
+				</a>
+			</div>
+			<div class="header-hamburger d-flex d-lg-none">
+				<span class="hamburger-button" id="hamburger-button">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+	<div class="section-page">
+		<div class="section-breadcrumb">
+			<div class="container">
+				<ol class="breadcrumb bg-transparent rounded-0 mb-0 p-0">
+					<li class="breadcrumb-item">
+						<a href="#">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item">
+						Liên hệ
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="section-gap_small">
+			<div class="container">
+				<div class="row g-4 flex-column-reverse flex-lg-row">
+					<div class="col-lg-6">
+						<div class="section-heading">
+							<div class="heading-title">
+								Câu hỏi thường gặp
+							</div>
+						</div>
+						<div class="contact-collapse" id="contactCollapse">
+							<div class="contact-collapse_item">
+								<button class="contact-collapse_item__button" type="button" data-bs-toggle="collapse"
+								        data-bs-target="#contactCollapse1">
+									<i class="fal fa-angle-down"></i>Tôi có thể đặt sân theo những cách nào
+								</button>
+								<div class="collapse show" id="contactCollapse1" data-bs-parent="#contactCollapse">
+									<div class="contact-collapse_item__content">
+										<p>
+											Khách hàng có thể đặt sân theo những cách sau:
+										</p>
+										<ol>
+											<li>Gọi điện đến số Hotline đặt bàn 02206 599 699</li>
+											<li>Gửi email tới booking@chilinhgolf.com</li>
+											<li>Đặt sân trực tuyến tại website theo địa chỉ
+											    www.chilinhgolf.com/dat-san
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+							<div class="contact-collapse_item">
+								<button class="contact-collapse_item__button" type="button" data-bs-toggle="collapse"
+								        data-bs-target="#contactCollapse2">
+									<i class="fal fa-angle-down"></i>Tôi có thể đặt sân theo những cách nào
+								</button>
+								<div class="collapse" id="contactCollapse2" data-bs-parent="#contactCollapse">
+									<div class="contact-collapse_item__content">
+										<p>
+											Khách hàng có thể đặt sân theo những cách sau:
+										</p>
+										<ol>
+											<li>Gọi điện đến số Hotline đặt bàn 02206 599 699</li>
+											<li>Gửi email tới booking@chilinhgolf.com</li>
+											<li>Đặt sân trực tuyến tại website theo địa chỉ
+											    www.chilinhgolf.com/dat-san
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+							<div class="contact-collapse_item">
+								<button class="contact-collapse_item__button" type="button" data-bs-toggle="collapse"
+								        data-bs-target="#contactCollapse3">
+									<i class="fal fa-angle-down"></i>Tôi có thể đặt sân theo những cách nào
+								</button>
+								<div class="collapse" id="contactCollapse3" data-bs-parent="#contactCollapse">
+									<div class="contact-collapse_item__content">
+										<p>
+											Khách hàng có thể đặt sân theo những cách sau:
+										</p>
+										<ol>
+											<li>Gọi điện đến số Hotline đặt bàn 02206 599 699</li>
+											<li>Gửi email tới booking@chilinhgolf.com</li>
+											<li>Đặt sân trực tuyến tại website theo địa chỉ
+											    www.chilinhgolf.com/dat-san
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact-collapse_desc">
+							Để xem đầy đủ hơn, vui lòng truy cập trang <a href="">Những câu hỏi thường gặp</a>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="section-heading">
+							<div class="heading-title">
+								Phản ánh & Góp ý
+							</div>
+						</div>
+						<div class="contact-form">
+							<div class="row g-3">
+								<div class="col-12">
+									<div class="contact-form_item">
+										<input type="text" class="form-control" placeholder="Tên đầy đủ">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="contact-form_item">
+										<input type="text" class="form-control" placeholder="Số điện thoại">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="contact-form_item">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="contact-form_item">
+										<textarea name="" id="" class="form-control" placeholder="Nội dung"
+										          rows="5"></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<button type="submit"
+									        class="button-theme button-theme_primary button-theme_large text-uppercase w-100">
+										Gửi liên hệ
+									</button>
+								</div>
+								<div class="col-12">
+									<div class="contact-form_text">
+										* ChiLinh Golf cam đoan chỉ sử dụng thông tin Quý khách gửi để cải thiện dịch vụ
+										và nâng cao trải nghiệm khách hàng. Không sử dụng cho các mục đích khác. Mọi
+										thông tin Quý khách gửi đều được lưu trữ và bảo mật theo Chính sách bảo mật và
+										Quyền riêng tư
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.7083666543185!2d105.77184737584162!3d21.04435188724172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3bb828151b%3A0x4708db15eac0e0a0!2sNencer%20Software!5e0!3m2!1svi!2sus!4v1715154620784!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row g-4">
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-logo">
+							<a href="" class="d-inline-flex align-middle">
+								<img src="./assets/images/logo.svg" height="100" class="mw-100" alt="">
+							</a>
+						</div>
+						<div class="footer-text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry...
+						</div>
+						<div class="footer-social">
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/facebook.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/youtube.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/tiktok.png" class="rounded-circle img-fluid" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Quick Links
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Home
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								About Us
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Facility
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Shop
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Contact
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Address
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(480) 555-0103
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(406) 555-0120
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								deanna.curtis@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								debra.holt@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								285 Great North Road, Grey Lynn, Auckland 1021
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-title">
+							Newsletter
+						</div>
+						<div class="footer-text">
+							Subscribe our newsletter to get our latest update & news
+						</div>
+						<div class="footer-form">
+							<form action="">
+								<div class="footer-form_inner">
+									<input type="email" placeholder="Your email address" class="form-control">
+									<button type="submit">
+										<i class="fas fa-paper-plane"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row g-2 g-lg-4 flex-column-reverse flex-lg-row">
+				<div class="col-lg-5">
+					<div class="footer-copyright">
+						Copyright © 2024 Golftio. All Rights Reserved
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="footer-link">
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Support
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Terms of Use
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="floating-cart" id="floatingCart">
+	<div class="cart-card card border-0 rounded-0 bg-white position-fixed top-0 end-0 mw-100 h-100 overflow-hidden">
+		<div class="card-header rounded-0 bg-white hstack justify-content-between">
+			<div class="card-title fw-bold mb-0">
+				GIỎ HÀNG
+			</div>
+			<button class="link-default" id="closeCart">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			</button>
+		</div>
+		<div class="card-body p-0 flex-fill vstack h-100">
+			<div class="card-list position-relative flex-fill">
+				<div class="card-scroll position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+					<div id="cardList"
+					     class="card-list position-absolute top-0 start-0 bottom-0 end-0 mh-100"></div>
+					<div class="card-empty text-center">
+						<div class="card-icon">
+							<img src="./assets/images/empty-cart.avif" class="img-fluid" alt="">
+						</div>
+						<div class="card-title">
+							Giỏ hàng của bạn đang trống
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-information">
+				<div class="card-total hstack justify-content-between">
+					<div class="card-text">
+						Tạm tính:
+					</div>
+					<div class="card-value">1.050.000đ</div>
+				</div>
+				<div class="card-button">
+					<a href="./thanh-toan.html" class="button-theme button-theme_primary w-100">
+						Thanh toán <i class="fal fa-angle-right lh-base ms-2 fz-20"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="floating-overlay" id="floatingOverlay"></div>
+</div>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
