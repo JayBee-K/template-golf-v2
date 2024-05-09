@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Golf</title>
+	<meta name="description" content="Template Golf">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Golf">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Golf">
+	<meta property="og:image" content="./assets/images/logo.svg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+	      rel="stylesheet">
+
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
+	<style>
+		:root {
+			--primary-color: #0e7a31;
+			--primary-hover: #0b6427;
+			--primary-rgb: 14, 122, 49;
+			--secondary-color: #E4A662;
+			--secondary-hover: #c28440;
+			--secondary-rgb: 228, 166, 98;
+		}
+	</style>
+</head>
+<body>
+
+<div id="header" class="header">
+	<div class="header-inner">
+		<div class="header-logo">
+			<a href="" class="d-inline-block align-middle">
+				<img src="./assets/images/logo.svg" class="mw-100 w-auto" alt="">
+			</a>
+		</div>
+		<div class="header-navigation" id="header-navigation">
+			<ul>
+				<li>
+					<a href="">
+						GIỚI THIỆU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						SÂN GOLF
+					</a>
+				</li>
+				<li>
+					<a href="">
+						TIỆN ÍCH <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Sân Tập</a>
+						</li>
+						<li>
+							<a href="">Giáo Viên</a>
+						</li>
+						<li>
+							<a href="">Lưu Trú</a>
+						</li>
+						<li>
+							<a href="">Quầy Bar</a>
+						</li>
+						<li>
+							<a href="">Nhà Hàng</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						BẢNG GIÁ & KHUYẾN MÃI
+					</a>
+				</li>
+				<li>
+					<a href="">
+						GIẢI ĐẤU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						CỬA HÀNG <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Gậy Golf</a>
+						</li>
+						<li>
+							<a href="">Đồ Tập Golf</a>
+						</li>
+						<li>
+							<a href="">Thời Trang Golf</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						TIN TỨC - SỰ KIỆN
+					</a>
+				</li>
+				<li>
+					<a href="">
+						LIÊN HỆ
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-toolbar">
+			<div class="header-cart">
+				<button type="button" id="callCart" class="header-cart_button">
+					<i class="far fa-shopping-bag"></i>
+					<span>5</span>
+				</button>
+			</div>
+			<div class="header-user">
+				<a href="" class="button-theme button-theme_small button-theme_secondary">
+					Thành viên
+				</a>
+				<ul>
+					<li>
+						<a href="">
+							Đăng nhập
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Đăng ký
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-language">
+				<a href="" class="header-language_link active">
+					VI
+				</a>
+				<a href="" class="header-language_link">
+					EN
+				</a>
+			</div>
+			<div class="header-hamburger d-flex d-lg-none">
+				<span class="hamburger-button" id="hamburger-button">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+	<div class="section-page">
+		<div class="section-breadcrumb">
+			<div class="container">
+				<ol class="breadcrumb bg-transparent rounded-0 mb-0 p-0">
+					<li class="breadcrumb-item">
+						<a href="#">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item">
+						Bảng giá
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="section-gap_small">
+			<div class="container">
+				<div class="section-heading">
+					<div class="heading-title">
+						Bảng giá
+					</div>
+				</div>
+				<div class="vstack gap-5">
+					<div class="table-price">
+						<div class="table-responsive">
+							<table class="table mb-0">
+								<thead>
+								<tr>
+									<th>
+										Thứ Hai - Thứ Sáu
+									</th>
+									<th>
+										9 hố
+									</th>
+									<th>
+										18 hố
+									</th>
+									<th>
+										27 hố
+									</th>
+									<th>
+										36 hố
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="table-price">
+						<div class="table-responsive">
+							<table class="table mb-0">
+								<thead>
+								<tr>
+									<th>
+										Cuối tuần - Ngày lễ
+									</th>
+									<th>
+										9 hố
+									</th>
+									<th>
+										18 hố
+									</th>
+									<th>
+										27 hố
+									</th>
+									<th>
+										36 hố
+									</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Hội viên</strong>
+									</td>
+									<td>
+										700.000 VNĐ
+									</td>
+									<td>
+										1.000.000 VNĐ
+									</td>
+									<td>
+										1.500.000 VNĐ
+									</td>
+									<td>
+										2.000.000 VNĐ
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="table-text">
+						<p>Bảng giá có hiệu lực kể từ ngày 01/01/2024</p>
+						<div class="row">
+							<div class="col-lg-6">
+								<ul>
+									<li>Phí trên đã bao gồm Phí sân cỏ và Phí Caddie và 1/2 xe điện.</li>
+									<li>Phí trên đã bao gồm thuế.</li>
+									<li>Dịch vụ đặt Caddie: 200.000 VNĐ/người.</li>
+									<li>Mỗi người chơi cần có một bộ gậy riêng.</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul><li>Tối đa 3 khách đi cùng Hội viên được tính phí Khách của Hội viên.</li><li>Áp dụng mức giá 9 hố (50% của 18 hố) đối với các trường hợp Khách hàng phát sinh 9 hố tại sân theo mức phí đối tượng đã được áp dụng.</li><li>Khách hàng phải thanh toán theo số hố đã đặt, không áp dụng theo số hố thực tế chơi (ngoại trừ các trường hợp bất khả kháng không thể tiếp tục chơi).</li></ul>
+							</div>
+						</div>
+					</div>
+					<div class="section-article">
+						<div class="section-heading">
+							<div class="heading-title">
+								Chương trình khuyến mãi
+							</div>
+						</div>
+						<div class="row row-cols-lg-3 row-cols-1 row-cols-sm-2 g-4 justify-content-center">
+							<div class="col">
+								<div class="article-card card border-0 rounded-0 bg-white">
+									<div class="card-header p-0 bg-white rounded-0 border-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<img src="https://chilinhgolf.com/wp-content/uploads/2024/04/banner-copy.jpg" class="img-fluid transition-default"
+											     alt="">
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="article-card card border-0 rounded-0 bg-white">
+									<div class="card-header p-0 bg-white rounded-0 border-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<img src="https://chilinhgolf.com/wp-content/uploads/2024/04/banner-copy.jpg" class="img-fluid transition-default"
+											     alt="">
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="article-card card border-0 rounded-0 bg-white">
+									<div class="card-header p-0 bg-white rounded-0 border-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<img src="https://chilinhgolf.com/wp-content/uploads/2024/04/banner-copy.jpg" class="img-fluid transition-default"
+											     alt="">
+										</div>
+										<a href="" class="stretched-link"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row g-4">
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-logo">
+							<a href="" class="d-inline-flex align-middle">
+								<img src="./assets/images/logo.svg" height="100" class="mw-100" alt="">
+							</a>
+						</div>
+						<div class="footer-text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+							has
+							been the industry...
+						</div>
+						<div class="footer-social">
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/facebook.png" class="rounded-circle img-fluid"
+								     alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/youtube.png" class="rounded-circle img-fluid"
+								     alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/tiktok.png" class="rounded-circle img-fluid"
+								     alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Quick Links
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Home
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								About Us
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Facility
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Shop
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Contact
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Address
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(480) 555-0103
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(406) 555-0120
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								deanna.curtis@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								debra.holt@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								285 Great North Road, Grey Lynn, Auckland 1021
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-title">
+							Newsletter
+						</div>
+						<div class="footer-text">
+							Subscribe our newsletter to get our latest update & news
+						</div>
+						<div class="footer-form">
+							<form action="">
+								<div class="footer-form_inner">
+									<input type="email" placeholder="Your email address" class="form-control">
+									<button type="submit">
+										<i class="fas fa-paper-plane"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row g-2 g-lg-4 flex-column-reverse flex-lg-row">
+				<div class="col-lg-5">
+					<div class="footer-copyright">
+						Copyright © 2024 Golftio. All Rights Reserved
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="footer-link">
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Support
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Terms of Use
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="floating-cart" id="floatingCart">
+	<div class="cart-card card border-0 rounded-0 bg-white position-fixed top-0 end-0 mw-100 h-100 overflow-hidden">
+		<div class="card-header rounded-0 bg-white hstack justify-content-between">
+			<div class="card-title fw-bold mb-0">
+				GIỎ HÀNG
+			</div>
+			<button class="link-default" id="closeCart">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			</button>
+		</div>
+		<div class="card-body p-0 flex-fill vstack h-100">
+			<div class="card-list position-relative flex-fill">
+				<div class="card-scroll position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+					<div id="cardList"
+					     class="card-list position-absolute top-0 start-0 bottom-0 end-0 mh-100"></div>
+					<div class="card-empty text-center">
+						<div class="card-icon">
+							<img src="./assets/images/empty-cart.avif" class="img-fluid" alt="">
+						</div>
+						<div class="card-title">
+							Giỏ hàng của bạn đang trống
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-information">
+				<div class="card-total hstack justify-content-between">
+					<div class="card-text">
+						Tạm tính:
+					</div>
+					<div class="card-value">1.050.000đ</div>
+				</div>
+				<div class="card-button">
+					<a href="./thanh-toan.html" class="button-theme button-theme_primary w-100">
+						Thanh toán <i class="fal fa-angle-right lh-base ms-2 fz-20"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="floating-overlay" id="floatingOverlay"></div>
+</div>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

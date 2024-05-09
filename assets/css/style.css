@@ -1508,6 +1508,7 @@
 .section-page .section-heading {
 	text-align: left;
 	margin-bottom: 20px;
+	max-width: 100%;
 }
 
 .section-page .section-heading .heading-title {
@@ -1765,4 +1766,51 @@
 
 .section-sidebar .sidebar-item .article-item:hover .card-title {
 	color: var(--primary-color);
+}
+
+.table-price .table {
+	font-size: 1em;
+}
+
+.table-price .table thead tr th {
+	background-color: var(--primary-color);
+	color: var(--bs-white);
+	font-size: 1.075em;
+	width: calc(70% / 4);
+}
+
+.table-price .table thead tr th:first-child {
+	width: 30%;
+}
+
+.table-price .table th,
+.table-price .table td {
+	padding: 12px 12px;
+	white-space: nowrap;
+}
+
+.table-price .table td {
+	font-weight: 500;
+	font-size: 1.075em;
+}
+
+.table-text {
+	font-weight: 500;
+	font-size: 1.075em;
+}
+
+.section-golf {
+	background-attachment: fixed;
+}
+
+.section-golf .section-gap:before {
+	display: none;
+}
+
+.section-golf .golf-inner {
+	background-color: var(--bs-white);
+	padding: 25px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
