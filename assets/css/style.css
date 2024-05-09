@@ -1814,3 +1814,124 @@
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.section-aboutus.section-gap:before {
+	display: none;
+}
+
+.section-aboutus .introduction-image {
+	position: relative;
+	height: 100%;
+}
+
+.section-aboutus .introduction-image img {
+	position: absolute;
+	border-radius: 6px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.section-aboutus .introduction-content {
+	padding: 30px 0 30px 30px;
+}
+
+.section-aboutus .introduction-content .introduction-content_title {
+	font-size: 2.3em;
+	color: var(--primary-color);
+	font-weight: 700;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.section-aboutus .introduction-content .introduction-content_title > span {
+	color: var(--secondary-color);
+}
+
+.section-aboutus .introduction-content .introduction-content_title > a {
+	color: var(--secondary-color);
+}
+
+.section-aboutus .introduction-content .introduction-content_title > a:hover {
+	color: var(--secondary-hover);
+}
+
+.section-aboutus .introduction-content .introduction-content_title.introduction-content_title__decor {
+	padding-bottom: 10px;
+}
+
+.section-aboutus .introduction-content .introduction-content_title.introduction-content_title__decor:before {
+	content: "";
+	display: block;
+	width: 100px;
+	background-color: var(--primary-color);
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.section-aboutus .introduction-content .introduction-content_desc {
+	font-size: 1.15em;
+	line-height: 1.8;
+	color: var(--bs-gray-900);
+	font-weight: 500;
+}
+
+.section-aboutus .introduction-content .introduction-content_desc ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.section-aboutus .introduction-content .introduction-content_desc ul li + li {
+	margin-top: 5px;
+}
+
+.section-aboutus .introduction-content .introduction-content_desc ul li i {
+	color: var(--primary-color);
+	margin-right: 4px;
+	font-size: .9em;
+}
+
+.section-aboutus:nth-child(odd) .row {
+	flex-direction: row-reverse !important;
+}
+
+.section-aboutus:nth-child(odd) .introduction-content {
+	padding: 30px 30px 30px 0;
+}
+
+.section-prize.section-gap:before {
+	display: none;
+}
+
+.prize-card {
+	border-radius: 8px;
+	border: 1px solid #d9d9d9;
+	padding: 16px;
+	height: 100%;
+	transition: var(--transition-default);
+	overflow: hidden;
+	text-align: center;
+}
+
+.prize-card .prize-content {
+	padding-top: 16px;
+}
+
+.prize-card .prize-content .prize-content_title {
+	font-size: 1.45em;
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+.prize-card .prize-content .prize-content_desc {
+	font-size: 1.15em;
+	margin-top: 4px;
+}
+
+.prize-card:hover {
+	box-shadow: 4px 4px 20px rgb(0 0 0 / 15%);
+}
