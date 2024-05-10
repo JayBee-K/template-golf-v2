@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Golf</title>
+	<meta name="description" content="Template Golf">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Golf">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Golf">
+	<meta property="og:image" content="./assets/images/logo.svg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+	      rel="stylesheet">
+
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
+	<style>
+		:root {
+			--primary-color: #0e7a31;
+			--primary-hover: #0b6427;
+			--primary-rgb: 14, 122, 49;
+			--secondary-color: #E4A662;
+			--secondary-hover: #c28440;
+			--secondary-rgb: 228, 166, 98;
+		}
+	</style>
+</head>
+<body>
+
+<div id="header" class="header">
+	<div class="header-inner">
+		<div class="header-logo">
+			<a href="" class="d-inline-block align-middle">
+				<img src="./assets/images/logo.svg" class="mw-100 w-auto" alt="">
+			</a>
+		</div>
+		<div class="header-navigation" id="header-navigation">
+			<ul>
+				<li>
+					<a href="">
+						GIỚI THIỆU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						SÂN GOLF
+					</a>
+				</li>
+				<li>
+					<a href="">
+						TIỆN ÍCH <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Sân Tập</a>
+						</li>
+						<li>
+							<a href="">Giáo Viên</a>
+						</li>
+						<li>
+							<a href="">Lưu Trú</a>
+						</li>
+						<li>
+							<a href="">Quầy Bar</a>
+						</li>
+						<li>
+							<a href="">Nhà Hàng</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						BẢNG GIÁ & KHUYẾN MÃI
+					</a>
+				</li>
+				<li>
+					<a href="">
+						GIẢI ĐẤU
+					</a>
+				</li>
+				<li>
+					<a href="">
+						CỬA HÀNG <i class="far fa-angle-down"></i>
+					</a>
+					<ul>
+						<li>
+							<a href="">Gậy Golf</a>
+						</li>
+						<li>
+							<a href="">Đồ Tập Golf</a>
+						</li>
+						<li>
+							<a href="">Thời Trang Golf</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						TIN TỨC - SỰ KIỆN
+					</a>
+				</li>
+				<li>
+					<a href="">
+						LIÊN HỆ
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-toolbar">
+			<div class="header-cart">
+				<button type="button" id="callCart" class="header-cart_button">
+					<i class="far fa-shopping-bag"></i>
+					<span>5</span>
+				</button>
+			</div>
+			<div class="header-user">
+				<a href="" class="button-theme button-theme_small button-theme_secondary">
+					Thành viên
+				</a>
+				<ul>
+					<li>
+						<a href="">
+							Đăng nhập
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Đăng ký
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-language">
+				<a href="" class="header-language_link active">
+					VI
+				</a>
+				<a href="" class="header-language_link">
+					EN
+				</a>
+			</div>
+			<div class="header-hamburger d-flex d-lg-none">
+				<span class="hamburger-button" id="hamburger-button">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+	<div class="section-page">
+		<div class="section-breadcrumb">
+			<div class="container">
+				<ol class="breadcrumb bg-transparent rounded-0 mb-0 p-0">
+					<li class="breadcrumb-item">
+						<a href="#">Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item">
+						<a href="#">Danh sách sản phẩm</a>
+					</li>
+					<li class="breadcrumb-item">
+						Lag Stick Golf
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="section-gap_small product-detail">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-lg-4">
+						<div class="product-images vstack">
+							<div class="position-relative slider-theme product-avatar" id="product-avatar">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-1.jpg"
+												   data-fancybox="product-images" data-index="1"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-2.jpg"
+												   data-fancybox="product-images" data-index="2"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-1.jpg"
+												   data-fancybox="product-images" data-index="3"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-2.jpg"
+												   data-fancybox="product-images" data-index="4"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-1.jpg"
+												   data-fancybox="product-images" data-index="5"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-2.jpg"
+												   data-fancybox="product-images" data-index="6"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-1.jpg"
+												   data-fancybox="product-images" data-index="7"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+												<a href="./assets/images/product/product-2.jpg"
+												   data-fancybox="product-images" data-index="8"
+												   class="stretched-link"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-button_prev">
+									<i class="fal fa-angle-left"></i>
+								</div>
+								<div class="slider-button_next">
+									<i class="fal fa-angle-right"></i>
+								</div>
+							</div>
+							<div class="position-relative product-thumb" id="product-thumb">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="product-image">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="img-fluid">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="product-title">
+							Lag Stick Golf
+						</div>
+						<div class="product-meta vstack gap-5px">
+							<div class="product-meta_item">
+								Mã sản phẩm: <strong>DCD796M2</strong>
+							</div>
+							<div class="product-meta_item">
+								Thương hiệu: <strong>Dewalt</strong>
+							</div>
+							<div class="product-meta_item">
+								Thời gian bảo hành: <strong>Đang cập nhật</strong>
+							</div>
+						</div>
+						<div class="product-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolore fuga ipsam iure
+							modi
+							quam sequi suscipit veritatis. Dolorem eaque esse magni, molestias obcaecati perferendis!
+						</div>
+						<div class="product-price hstack gap-10px">
+							<div class="price-current fw-bold">6.950.000₫</div>
+							<div class="price-old align-self-end text-decoration-line-through">
+								7.500.000₫
+							</div>
+						</div>
+						<div class="product-property">
+							<div class="product-property_text">
+								Chọn Size
+							</div>
+							<div class="product-property_group">
+								<a href="" class="product-property_item active">
+									S
+								</a>
+								<a href="" class="product-property_item">
+									M
+								</a>
+								<a href="" class="product-property_item">
+									L
+								</a>
+								<a href="" class="product-property_item">
+									XL
+								</a>
+								<a href="" class="product-property_item">
+									XXL
+								</a>
+							</div>
+						</div>
+						<div class="product-property">
+							<div class="product-property_text">
+								Chọn Màu
+							</div>
+							<div class="product-property_group">
+								<a href="" class="product-property_item product-property_color active" style="--color: #000">
+									<span></span>
+								</a>
+								<a href="" class="product-property_item product-property_color" style="--color: #ff0000">
+									<span></span>
+								</a>
+								<a href="" class="product-property_item product-property_color" style="--color: #FFB700">
+									<span></span>
+								</a>
+								<a href="" class="product-property_item product-property_color" style="--color: #0048ff">
+									<span></span>
+								</a>
+								<a href="" class="product-property_item product-property_color" style="--color: #ffffff">
+									<span></span>
+								</a>
+							</div>
+						</div>
+						<div class="product-quantity">
+							<div class="product-quantity_group hstack flex-nowrap">
+								<button disabled=""
+								        class="link-default hstack justify-content-center flex-shrink-0 product-quantity_btn">
+									<i class="fal fa-minus"></i>
+								</button>
+								<input type="text" class="form-control product-quantity_input" value="1">
+								<button class="link-default hstack justify-content-center flex-shrink-0 product-quantity_btn">
+									<i class="fal fa-plus"></i>
+								</button>
+							</div>
+							<div class="product-quantity_text">
+								Hết hàng
+							</div>
+						</div>
+						<div class="product-buttons vstack flex-xl-row d-inline-flex gap-10px">
+							<button href="" class="button-theme button-theme_secondary button-theme_large fw-bold">
+								<span>
+									Thêm vào giỏ hàng
+								</span>
+							</button>
+							<button href="" class="button-theme button-theme_primary button-theme_large fw-bold">
+								Mua hàng ngay
+							</button>
+						</div>
+						<div class="product-support vstack gap-5px">
+							<div class="product-support_item">
+								Hỗ trợ trực tuyến tốt nhất: 19006750
+							</div>
+							<div class="product-support_item">
+								Cần tư vấn: <a href="" class="link-default">Tại đây</a>
+							</div>
+							<div class="product-support_item">
+								Giờ làm việc: <strong>9h00 đến 21h00 các ngày trong tuần</strong>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="section-gap_small pb-0">
+							<div class="product-tabs">
+								<ul class="nav nav-tabs mb-0 border-bottom-0">
+									<li class="nav-item">
+										<button class="nav-link active" data-bs-toggle="tab"
+										        data-bs-target="#thong-tin-san-pham"
+										        type="button">
+											<span>
+												Thông tin sản phẩm
+											</span>
+										</button>
+									</li>
+									<li class="nav-item">
+										<button class="nav-link" data-bs-toggle="tab"
+										        data-bs-target="#huong-dan-mua-hang"
+										        type="button">
+											<span>
+												Hướng dẫn mua hàng
+											</span>
+										</button>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade active show" id="thong-tin-san-pham">
+										<div class="detail-content">
+											<p>
+												<strong>Nencer Software</strong> là một công ty chuyên về phát triển và
+												                                 thiết kế
+												                                 website, với nhiều năm
+												                                 kinh nghiệm trong thiết kế web và phần
+												                                 mềm quản lý.
+												                                 Chúng tôi tự hào là một trong những
+												                                 công ty hàng đầu trong việc cung cấp
+												                                 dịch vụ thiết kế
+												                                 website đổi thẻ hiện đại, đáng tin
+												                                 cậy, và phù hợp với mọi nhu cầu của
+												                                 khách hàng.
+											</p>
+											<blockquote>
+												Đây là nội dung trích dẫn ây là nội dung trích dẫn <strong>Nencer
+												                                                           Software</strong>
+												là
+												một công ty chuyên về phát triển và thiết kế
+												website, với nhiều năm
+												kinh nghiệm trong thiết kế web và phần mềm quản lý. Chúng tôi tự hào là
+												một trong những
+												công ty hàng đầu trong việc cung cấp dịch vụ thiết kế website đổi thẻ
+												hiện đại, đáng tin
+												cậy, và phù hợp với mọi nhu cầu của khách hàng.
+											</blockquote>
+											<h2>
+												Tiêu đề này dùng thẻ heading h3
+											</h2>
+											<h3>
+												Tiêu đề này dùng thẻ heading h3
+											</h3>
+											<h4>
+												Tiêu đề này dùng thẻ heading h4
+											</h4>
+											<h5>
+												Tiêu đề này dùng thẻ heading h5
+											</h5>
+											<h6>
+												Tiêu đề này dùng thẻ heading h6 (kích thước chữ bằng với nội dung)
+											</h6>
+											<ul>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+											</ul>
+											<ol>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+											</ol>
+											<p>
+												Dịch vụ <a href="">thiết kế website đổi thẻ</a> của Nencer Software mang
+												đến cho bạn một
+												giải pháp hoàn
+												hảo để xây dựng trang web đổi thẻ hiện đại, chuyên nghiệp và tối ưu hóa
+												cho trải nghiệm
+												người dùng tốt nhất. Với sự cam kết về chất lượng và sáng tạo, chúng tôi
+												hy vọng có cơ
+												hội hợp tác và giúp bạn đạt được mục tiêu trực tuyến của mình.
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 1">
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 2">
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 3">
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 4">
+											</p>
+											<h2>
+												Lợi ích của việc sử dụng dịch vụ thiết kế website đổi thẻ từ Nencer
+												Software
+											</h2>
+											<p>
+												Khi bạn chọn dịch vụ thiết kế website đổi thẻ từ Nencer Software, bạn sẽ
+												được hưởng
+												nhiều lợi ích quan trọng:
+											</p>
+											<h3>
+												1: Thiết kế chuyên nghiệp
+											</h3>
+											<p>
+												Chúng tôi có đội ngũ thiết kế chuyên nghiệp với nhiều năm kinh nghiệm
+												trong việc tạo ra
+												các trang web đổi thẻ chất lượng cao, phù hợp với mọi nhu cầu của bạn.
+											</p>
+											<h3>2: Công nghệ mới nhất</h3>
+											<p>
+												Nencer Software luôn cập nhật với công nghệ và xu hướng mới nhất trong
+												<em>thiết kế
+												    website đổi
+												    thẻ</em>.
+												Chúng tôi sử dụng các công cụ và ngôn ngữ lập trình hiện đại như
+												HTML5, CSS3, JavaScript, và Responsive Web Design để đảm bảo trang web
+												của bạn luôn đẹp
+												và hiệu quả trên mọi thiết bị.
+											</p>
+											<p>
+												Các phần mềm của chúng tôi cung cấp đều được thiết kế rất chuyên nghiệp
+												và tỉ mỉ. Đối
+												với những khách hàng VIP, chúng tôi nhận hỗ trợ từ 24/7 không ngày nghỉ
+												lễ. Chúng tôi sẽ
+												giúp cho khách hàng tối ưu chi phí và nhân lực bằng việc tự động hóa sản
+												phẩm. Quý khách
+												muốn mua sản phẩm chỉ cần thanh toán trực tuyến. Hệ thống sẽ nhận và hỗ
+												trợ 24/24.
+											</p>
+											<table align="center" border="1" cellpadding="1" cellspacing="1"
+											       style="width: 100%;">
+												<tbody>
+												<tr>
+													<td style="text-align: center;"><span
+															style="font-size:18px;"><strong>Quy
+													                                        mô</strong></span>
+													</td>
+													<td style="text-align: center;"><span
+															style="font-size:18px;"><strong>Tính năng&nbsp;
+													                                        phần
+													                                        mềm</strong></span>
+													</td>
+													<td style="text-align: center;"><span
+															style="font-size:18px;"><strong>Báo giá phần
+													                                        mềm</strong></span>
+													</td>
+												</tr>
+												<tr>
+													<td style="text-align: center;"><strong><span
+															style="font-size:16px;">Phòng khám
+													                                chuyên
+													                                khoa</span></strong>
+													</td>
+													<td>
+														<ul>
+															<li><span style="font-size:16px;">Quản lý tiếp đón</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý kế toán - Thu
+															                                  ngân</span></li>
+															<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư
+															                                  y tế</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ,
+															                                  nhân viên</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+															                                  thuốc</span></li>
+															<li><span style="font-size:16px;">Kết nối máy ngoại
+															                                  vi</span></li>
+															<li><span style="font-size:16px;">Thống kê, báo cáo</span>
+															</li>
+															<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ
+															                                  khám bệnh</span>
+															</li>
+															<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+															                                  khám</span></li>
+														</ul>
+													</td>
+													<td><span style="font-size:16px;">2.000.000 VNĐ</span></td>
+												</tr>
+												<tr>
+													<td style="text-align: center;"><strong><span
+															style="font-size:16px;">Phòng khám đa
+													                                khoa</span></strong>
+													</td>
+													<td>
+														<ul>
+															<li><span style="font-size:16px;">Quản lý tiếp đón</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khoa phòng</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+															                                  ngoại
+															                                  trú</span></li>
+															<li><span style="font-size:16px;">Quản lý kế toán - Thu
+															                                  ngân</span></li>
+															<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư
+															                                  y tế</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ,
+															                                  nhân viên</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+															                                  thuốc</span></li>
+															<li><span style="font-size:16px;">Kết nối máy ngoại
+															                                  vi</span></li>
+															<li><span style="font-size:16px;">Thống kê, báo cáo</span>
+															</li>
+															<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ
+															                                  khám bệnh</span>
+															</li>
+															<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+															                                  khám</span></li>
+															<li><span style="font-size:16px;">In tem bệnh nhân</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý viện phí</span>
+															</li>
+															<li><span style="font-size:16px;">Liên thông BHXH</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khám sức
+															                                  khỏe</span></li>
+															<li><span style="font-size:16px;">Quản lý cấp cứu</span>
+															</li>
+															<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+															                                  tuyến</span></li>
+														</ul>
+													</td>
+													<td><span style="font-size:16px;">10.000.000 VNĐ</span></td>
+												</tr>
+												<tr>
+													<td style="text-align: center;"><strong><span
+															style="font-size:16px;">Bệnh
+													                                viện</span></strong>
+													</td>
+													<td>
+														<ul>
+															<li><span style="font-size:16px;">Quản lý tiếp đón</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khoa phòng</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+															                                  ngoại
+															                                  trú</span></li>
+															<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+															                                  nội trú</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý kế toán - Thu
+															                                  ngân</span></li>
+															<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư
+															                                  y tế</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ,
+															                                  nhân viên</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+															                                  thuốc</span></li>
+															<li><span style="font-size:16px;">Kết nối máy ngoại
+															                                  vi</span></li>
+															<li><span style="font-size:16px;">Thống kê, báo cáo</span>
+															</li>
+															<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ
+															                                  khám bệnh</span>
+															</li>
+															<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+															                                  khám</span></li>
+															<li><span style="font-size:16px;">In tem bệnh nhân</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý viện phí</span>
+															</li>
+															<li><span style="font-size:16px;">Liên thông BHXH</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khám sức
+															                                  khỏe</span></li>
+															<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+															                                  tuyến</span></li>
+															<li><span style="font-size:16px;">Quản lý cấp cứu</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đấu thầu</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý quá trình đào tạo
+															                                  tuyến</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý chương trình y
+															                                  tế</span></li>
+															<li><span style="font-size:16px;">Tích hợp thêm modun nâng
+															                                  cao</span></li>
+														</ul>
+													</td>
+													<td><span style="font-size:16px;">25.000.000 VNĐ</span></td>
+												</tr>
+												</tbody>
+											</table>
+											<p>
+												Công ty phần mềm trực tuyến Nencer Software là đơn vị hàng đầu chuyên
+												thiết kế web đổi
+												thẻ cào, làm web bán thẻ cào, làm web gạch thẻ tự động, web gạch cước tự
+												động uy tín
+												chuyên nghiệp trên toàn quốc, đã thực hiện rất nhiều dự án thiết kế
+												website gạch thẻ
+												cào, web nạp cước thành công cho khách hàng.
+											</p>
+											<p>
+												Với kinh nghiệm hơn 10 năm trong lĩnh vực lập trình web và đội ngũ kỹ
+												thuật giỏi chuyên
+												môn, chuyên nghiệp trong công việc Nencer Software sẽ đáp ứng tất cả các
+												yêu cầu của
+												khách hàng. Ngoài ra chúng tôi sẽ hỗ trợ, hướng dẫn khách hàng vận hành,
+												khai thác hệ
+												thống với hiệu quả tốt nhất và tư vấn miễn phí khách hàng về marketing
+												online.
+											</p>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="huong-dan-mua-hang">
+										<div class="detail-content">
+											<p>
+												<strong>Nencer Software</strong> là một công ty chuyên về phát triển và
+												                                 thiết kế
+												                                 website, với nhiều năm
+												                                 kinh nghiệm trong thiết kế web và phần
+												                                 mềm quản lý.
+												                                 Chúng tôi tự hào là một trong những
+												                                 công ty hàng đầu trong việc cung cấp
+												                                 dịch vụ thiết kế
+												                                 website đổi thẻ hiện đại, đáng tin
+												                                 cậy, và phù hợp với mọi nhu cầu của
+												                                 khách hàng.
+											</p>
+											<blockquote>
+												Đây là nội dung trích dẫn ây là nội dung trích dẫn <strong>Nencer
+												                                                           Software</strong>
+												là
+												một công ty chuyên về phát triển và thiết kế
+												website, với nhiều năm
+												kinh nghiệm trong thiết kế web và phần mềm quản lý. Chúng tôi tự hào là
+												một trong những
+												công ty hàng đầu trong việc cung cấp dịch vụ thiết kế website đổi thẻ
+												hiện đại, đáng tin
+												cậy, và phù hợp với mọi nhu cầu của khách hàng.
+											</blockquote>
+											<h2>
+												Tiêu đề này dùng thẻ heading h3
+											</h2>
+											<h3>
+												Tiêu đề này dùng thẻ heading h3
+											</h3>
+											<h4>
+												Tiêu đề này dùng thẻ heading h4
+											</h4>
+											<h5>
+												Tiêu đề này dùng thẻ heading h5
+											</h5>
+											<h6>
+												Tiêu đề này dùng thẻ heading h6 (kích thước chữ bằng với nội dung)
+											</h6>
+											<ul>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách không có số thứ tự
+												</li>
+											</ul>
+											<ol>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+												<li>
+													Đây là danh sách có số thứ tự
+												</li>
+											</ol>
+											<p>
+												Dịch vụ <a href="">thiết kế website đổi thẻ</a> của Nencer Software mang
+												đến cho bạn một
+												giải pháp hoàn
+												hảo để xây dựng trang web đổi thẻ hiện đại, chuyên nghiệp và tối ưu hóa
+												cho trải nghiệm
+												người dùng tốt nhất. Với sự cam kết về chất lượng và sáng tạo, chúng tôi
+												hy vọng có cơ
+												hội hợp tác và giúp bạn đạt được mục tiêu trực tuyến của mình.
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 1">
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 2">
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 3">
+											</p>
+											<p style="text-align: center">
+												<img src="https://nencer.com/storage/userfiles/files/thiet-ke-website-doi-the-cao-thanh-tien-mat.JPG"
+												     alt="Đây là tiêu đề hình 4">
+											</p>
+											<h2>
+												Lợi ích của việc sử dụng dịch vụ thiết kế website đổi thẻ từ Nencer
+												Software
+											</h2>
+											<p>
+												Khi bạn chọn dịch vụ thiết kế website đổi thẻ từ Nencer Software, bạn sẽ
+												được hưởng
+												nhiều lợi ích quan trọng:
+											</p>
+											<h3>
+												1: Thiết kế chuyên nghiệp
+											</h3>
+											<p>
+												Chúng tôi có đội ngũ thiết kế chuyên nghiệp với nhiều năm kinh nghiệm
+												trong việc tạo ra
+												các trang web đổi thẻ chất lượng cao, phù hợp với mọi nhu cầu của bạn.
+											</p>
+											<h3>2: Công nghệ mới nhất</h3>
+											<p>
+												Nencer Software luôn cập nhật với công nghệ và xu hướng mới nhất trong
+												<em>thiết kế
+												    website đổi
+												    thẻ</em>.
+												Chúng tôi sử dụng các công cụ và ngôn ngữ lập trình hiện đại như
+												HTML5, CSS3, JavaScript, và Responsive Web Design để đảm bảo trang web
+												của bạn luôn đẹp
+												và hiệu quả trên mọi thiết bị.
+											</p>
+											<p>
+												Các phần mềm của chúng tôi cung cấp đều được thiết kế rất chuyên nghiệp
+												và tỉ mỉ. Đối
+												với những khách hàng VIP, chúng tôi nhận hỗ trợ từ 24/7 không ngày nghỉ
+												lễ. Chúng tôi sẽ
+												giúp cho khách hàng tối ưu chi phí và nhân lực bằng việc tự động hóa sản
+												phẩm. Quý khách
+												muốn mua sản phẩm chỉ cần thanh toán trực tuyến. Hệ thống sẽ nhận và hỗ
+												trợ 24/24.
+											</p>
+											<table align="center" border="1" cellpadding="1" cellspacing="1"
+											       style="width: 100%;">
+												<tbody>
+												<tr>
+													<td style="text-align: center;"><span
+															style="font-size:18px;"><strong>Quy
+													                                        mô</strong></span>
+													</td>
+													<td style="text-align: center;"><span
+															style="font-size:18px;"><strong>Tính năng&nbsp;
+													                                        phần
+													                                        mềm</strong></span>
+													</td>
+													<td style="text-align: center;"><span
+															style="font-size:18px;"><strong>Báo giá phần
+													                                        mềm</strong></span>
+													</td>
+												</tr>
+												<tr>
+													<td style="text-align: center;"><strong><span
+															style="font-size:16px;">Phòng khám
+													                                chuyên
+													                                khoa</span></strong>
+													</td>
+													<td>
+														<ul>
+															<li><span style="font-size:16px;">Quản lý tiếp đón</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý kế toán - Thu
+															                                  ngân</span></li>
+															<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư
+															                                  y tế</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ,
+															                                  nhân viên</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+															                                  thuốc</span></li>
+															<li><span style="font-size:16px;">Kết nối máy ngoại
+															                                  vi</span></li>
+															<li><span style="font-size:16px;">Thống kê, báo cáo</span>
+															</li>
+															<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ
+															                                  khám bệnh</span>
+															</li>
+															<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+															                                  khám</span></li>
+														</ul>
+													</td>
+													<td><span style="font-size:16px;">2.000.000 VNĐ</span></td>
+												</tr>
+												<tr>
+													<td style="text-align: center;"><strong><span
+															style="font-size:16px;">Phòng khám đa
+													                                khoa</span></strong>
+													</td>
+													<td>
+														<ul>
+															<li><span style="font-size:16px;">Quản lý tiếp đón</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khoa phòng</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+															                                  ngoại
+															                                  trú</span></li>
+															<li><span style="font-size:16px;">Quản lý kế toán - Thu
+															                                  ngân</span></li>
+															<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư
+															                                  y tế</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ,
+															                                  nhân viên</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+															                                  thuốc</span></li>
+															<li><span style="font-size:16px;">Kết nối máy ngoại
+															                                  vi</span></li>
+															<li><span style="font-size:16px;">Thống kê, báo cáo</span>
+															</li>
+															<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ
+															                                  khám bệnh</span>
+															</li>
+															<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+															                                  khám</span></li>
+															<li><span style="font-size:16px;">In tem bệnh nhân</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý viện phí</span>
+															</li>
+															<li><span style="font-size:16px;">Liên thông BHXH</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khám sức
+															                                  khỏe</span></li>
+															<li><span style="font-size:16px;">Quản lý cấp cứu</span>
+															</li>
+															<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+															                                  tuyến</span></li>
+														</ul>
+													</td>
+													<td><span style="font-size:16px;">10.000.000 VNĐ</span></td>
+												</tr>
+												<tr>
+													<td style="text-align: center;"><strong><span
+															style="font-size:16px;">Bệnh
+													                                viện</span></strong>
+													</td>
+													<td>
+														<ul>
+															<li><span style="font-size:16px;">Quản lý tiếp đón</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khoa phòng</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+															                                  ngoại
+															                                  trú</span></li>
+															<li><span style="font-size:16px;">Quản lý bệnh nhân điều trị
+															                                  nội trú</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý kế toán - Thu
+															                                  ngân</span></li>
+															<li><span style="font-size:16px;">Quản lý kho thuốc – vật tư
+															                                  y tế</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đội ngũ y bác sĩ,
+															                                  nhân viên</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý và tạo lập đơn
+															                                  thuốc</span></li>
+															<li><span style="font-size:16px;">Kết nối máy ngoại
+															                                  vi</span></li>
+															<li><span style="font-size:16px;">Thống kê, báo cáo</span>
+															</li>
+															<li><span style="font-size:16px;">Lưu trữ lịch sử, hồ sơ
+															                                  khám bệnh</span>
+															</li>
+															<li><span style="font-size:16px;">Hẹn lịch khám, nhắc lịch
+															                                  khám</span></li>
+															<li><span style="font-size:16px;">In tem bệnh nhân</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý viện phí</span>
+															</li>
+															<li><span style="font-size:16px;">Liên thông BHXH</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý khám sức
+															                                  khỏe</span></li>
+															<li><span style="font-size:16px;">Đặt lịch khám bệnh trực
+															                                  tuyến</span></li>
+															<li><span style="font-size:16px;">Quản lý cấp cứu</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý đấu thầu</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý quá trình đào tạo
+															                                  tuyến</span>
+															</li>
+															<li><span style="font-size:16px;">Quản lý chương trình y
+															                                  tế</span></li>
+															<li><span style="font-size:16px;">Tích hợp thêm modun nâng
+															                                  cao</span></li>
+														</ul>
+													</td>
+													<td><span style="font-size:16px;">25.000.000 VNĐ</span></td>
+												</tr>
+												</tbody>
+											</table>
+											<p>
+												Công ty phần mềm trực tuyến Nencer Software là đơn vị hàng đầu chuyên
+												thiết kế web đổi
+												thẻ cào, làm web bán thẻ cào, làm web gạch thẻ tự động, web gạch cước tự
+												động uy tín
+												chuyên nghiệp trên toàn quốc, đã thực hiện rất nhiều dự án thiết kế
+												website gạch thẻ
+												cào, web nạp cước thành công cho khách hàng.
+											</p>
+											<p>
+												Với kinh nghiệm hơn 10 năm trong lĩnh vực lập trình web và đội ngũ kỹ
+												thuật giỏi chuyên
+												môn, chuyên nghiệp trong công việc Nencer Software sẽ đáp ứng tất cả các
+												yêu cầu của
+												khách hàng. Ngoài ra chúng tôi sẽ hỗ trợ, hướng dẫn khách hàng vận hành,
+												khai thác hệ
+												thống với hiệu quả tốt nhất và tư vấn miễn phí khách hàng về marketing
+												online.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-gap_small">
+			<div class="container">
+				<div class="section-heading">
+					<div class="heading-title">
+						Sản phẩm liên quan
+					</div>
+				</div>
+				<div class="slider-theme slider-product position-relative" id="productRelatedSlider">
+					<div class="swiper h-auto">
+						<div class="swiper-wrapper h-auto">
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+											<span class="product-soldout">
+												Hết hàng
+											</span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-card card border-0 rounded-0 bg-white">
+									<div class="card-header bg-transparent rounded-0 border-0 p-0 position-relative">
+										<div class="ratio ratio-1x1">
+											<span class="product-image_upper transition-default">
+												<img src="./assets/images/product/product-1.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_lower transition-default">
+												<img src="./assets/images/product/product-2.jpg"
+												     class="h-100 w-100 object-fit-cover transition-default" alt="">
+											</span>
+											<span class="product-image_overlay"></span>
+										</div>
+										<a href="" class="stretched-link"></a>
+										<div class="product-buttons">
+											<button type="button"
+											        class="button-theme button-theme_primary buttonCart">
+												<i class="far fa-shopping-bag"></i>
+											</button>
+											<a href="" class="button-theme button-theme_secondary">
+												<i class="far fa-eye"></i>
+											</a>
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="card-title">
+											<a href="" class="limit">
+												Lag Stick Golf
+											</a>
+										</div>
+										<div class="card-brand">
+											Brand:
+											<span class="ms-1">Restless</span>
+										</div>
+										<div class="card-price">
+											<div class="card-price_current">
+												$539.00
+											</div>
+											<div class="card-price_old">
+												$600.00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="button-theme slider-button_prev">
+						<i class="fal fa-angle-left"></i>
+					</div>
+					<div class="button-theme slider-button_next">
+						<i class="fal fa-angle-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row g-4">
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-logo">
+							<a href="" class="d-inline-flex align-middle">
+								<img src="./assets/images/logo.svg" height="100" class="mw-100" alt="">
+							</a>
+						</div>
+						<div class="footer-text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry...
+						</div>
+						<div class="footer-social">
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/facebook.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/youtube.png" class="rounded-circle img-fluid" alt="">
+							</a>
+							<a href="" class="footer-social_item">
+								<img src="./assets/images/social/tiktok.png" class="rounded-circle img-fluid" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Quick Links
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Home
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								About Us
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Facility
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Shop
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								Contact
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6">
+					<div class="footer-item">
+						<div class="footer-title">
+							Address
+						</div>
+						<div class="footer-link">
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(480) 555-0103
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								(406) 555-0120
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								deanna@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								debra.holt@example.com
+							</a>
+							<a href="" class="footer-link_item d-inline-flex align-middle">
+								285 Great North Road, Grey Lynn, Auckland 1021
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-item">
+						<div class="footer-title">
+							Newsletter
+						</div>
+						<div class="footer-text">
+							Subscribe our newsletter to get our latest update & news
+						</div>
+						<div class="footer-form">
+							<form action="">
+								<div class="footer-form_inner">
+									<input type="email" placeholder="Your email address" class="form-control">
+									<button type="submit">
+										<i class="fas fa-paper-plane"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row g-2 g-lg-4 flex-column-reverse flex-lg-row">
+				<div class="col-lg-5">
+					<div class="footer-copyright">
+						Copyright © 2024 Golftio. All Rights Reserved
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="footer-link">
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Support
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Terms of Use
+						</a>
+						<a href="" class="footer-link_item d-inline-flex align-middle">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="floating-cart" id="floatingCart">
+	<div class="cart-card card border-0 rounded-0 bg-white position-fixed top-0 end-0 mw-100 h-100 overflow-hidden">
+		<div class="card-header rounded-0 bg-white hstack justify-content-between">
+			<div class="card-title fw-bold mb-0">
+				GIỎ HÀNG
+			</div>
+			<button class="link-default" id="closeCart">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18"></line>
+					<line x1="6" y1="6" x2="18" y2="18"></line>
+				</svg>
+			</button>
+		</div>
+		<div class="card-body p-0 flex-fill vstack h-100">
+			<div class="card-list position-relative flex-fill">
+				<div class="card-scroll position-absolute top-0 start-0 bottom-0 end-0 mh-100">
+					<div id="cardList"
+					     class="card-list position-absolute top-0 start-0 bottom-0 end-0 mh-100"></div>
+					<div class="card-empty text-center">
+						<div class="card-icon">
+							<img src="./assets/images/empty-cart.avif" class="img-fluid" alt="">
+						</div>
+						<div class="card-title">
+							Giỏ hàng của bạn đang trống
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-information">
+				<div class="card-total hstack justify-content-between">
+					<div class="card-text">
+						Tạm tính:
+					</div>
+					<div class="card-value">1.050.000đ</div>
+				</div>
+				<div class="card-button">
+					<a href="./thanh-toan.html" class="button-theme button-theme_primary w-100">
+						Thanh toán <i class="fal fa-angle-right lh-base ms-2 fz-20"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="floating-overlay" id="floatingOverlay"></div>
+</div>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -421,3 +421,11 @@ input[type='number'] {
 	padding: 15px 30px 15px 30px;
 	font-size: 1.15em;
 }
+
+.fancybox__backdrop {
+	background-color: rgba(0, 0, 0, .9);
+}
+
+.fw-medium {
+	font-weight: 500;
+}

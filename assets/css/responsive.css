@@ -457,6 +457,161 @@
 	.section-aboutus .introduction-content .introduction-content_desc {
 		font-size: 1.075em;
 	}
+
+	.dropdown-filter .dropdown-button {
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+		display: block;
+	}
+
+	.dropdown-filter .dropdown-button .link-default {
+		width: 90px;
+		min-width: 1px;
+		gap: 6px;
+	}
+
+	.sidebar-filter {
+		position: fixed;
+		top: 0;
+		width: 90%;
+		max-width: 320px;
+		background-color: var(--bs-white);
+		height: 100vh;
+		overflow-y: auto;
+		z-index: 22;
+		-webkit-transition: var(--transition-default);
+		-o-transition: var(--transition-default);
+		transition: var(--transition-default);
+		left: -150%;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.sidebar-filter .sidebar-filter_header {
+		min-height: 50px;
+		padding: 0 0 0 15px;
+		border-bottom: 1px solid rgba(129, 129, 129, .2);
+		margin-bottom: 0 !important;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-align: center !important;
+		-ms-flex-align: center !important;
+		align-items: center !important;
+		-webkit-box-pack: justify !important;
+		-ms-flex-pack: justify !important;
+		justify-content: space-between !important;
+	}
+
+	.sidebar-filter .sidebar-filter_header .sidebar-filter_header__title {
+		font-size: 1.25em;
+		font-weight: 700;
+		color: var(--bs-gray-700);
+	}
+
+	.sidebar-filter .sidebar-filter_header .sidebar-filter_header__button {
+		width: 40px;
+		height: 40px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		border: 0;
+		padding: 0;
+		border-radius: 0;
+		background: transparent;
+		outline: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.sidebar-filter .sidebar-filter_header.section-heading .heading-button .link-default {
+		-webkit-transition: -webkit-transform .3s ease-in-out;
+		transition: -webkit-transform .3s ease-in-out;
+		-o-transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out;
+		transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+		color: var(--bs-gray-900);
+	}
+
+	.sidebar-filter .sidebar-filter_header.section-heading .heading-button .link-default svg {
+		stroke: var(--bs-gray-600);
+		-webkit-transition: stroke .3s ease-in-out .1s;
+		-o-transition: stroke .3s ease-in-out .1s;
+		transition: stroke .3s ease-in-out .1s;
+	}
+
+	.sidebar-overlay {
+		background: rgba(0, 0, 0, 0.7);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 21;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		-webkit-transition: var(--transition-default);
+		-o-transition: var(--transition-default);
+		transition: var(--transition-default);
+	}
+
+	.is-category .sidebar-overlay {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.is-category .sidebar-filter {
+		left: 0;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.product-detail .product-title {
+		font-size: 1.5em;
+	}
+
+	.product-detail .product-images .product-thumb {
+		padding: 0;
+	}
+
+	.product-detail .product-price .price-current {
+		font-size: 1.5em;
+	}
+
+	.product-detail .product-price .price-old {
+		font-size: 1.15em;
+	}
+
+	.product-detail .product-meta,
+	.product-detail .product-desc,
+	.product-detail .product-property,
+	.product-detail .product-support {
+		font-size: 1.075em;
+	}
+
+	.product-detail .product-tabs .nav-tabs {
+		white-space: nowrap;
+		max-width: 100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		flex-wrap: nowrap;
+	}
+
+	.product-detail .product-tabs .nav-tabs .nav-item .nav-link {
+		font-size: 1.15em;
+		padding: 10px 20px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -474,5 +629,14 @@
 	.utilities-grid {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.dropdown-filter .dropdown-text {
+		display: none;
+	}
+
+	.dropdown-filter .dropdown,
+	.dropdown-filter .dropdown .link-default {
+		width: 100%;
 	}
 }
