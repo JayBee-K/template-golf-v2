@@ -224,24 +224,13 @@
 }
 
 .section-gap {
-	padding: 85px 0 50px;
+	padding: 50px 0;
 	position: relative;
 }
 
 .section-gap_small {
 	padding: 30px 0;
 	position: relative;
-}
-
-.section-gap:before {
-	top: 0;
-	content: "";
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	height: 60px;
-	width: 1px;
-	box-shadow: inset 1px 1px rgba(0, 0, 0, 0.5) !important;
 }
 
 .section-heading {
@@ -1368,7 +1357,7 @@
 .hero-form .form-inner {
 	padding: 25px 45px 45px;
 	background: rgba(var(--primary-rgb), 0.7);
-	border-radius: 24px;
+	border-radius: 12px;
 	width: 650px;
 }
 
@@ -2508,4 +2497,78 @@
 
 .checkout-total .checkout-total_value {
 	color: var(--primary-color);
+}
+
+.detail-golf {
+	display: flex;
+	background-color: rgba(var(--primary-rgb), 0.2);
+}
+
+.detail-golf .detail-image {
+	width: 50%;
+	flex-shrink: 0;
+}
+
+.detail-golf .detail-content {
+	align-self: flex-start;
+	padding: 30px;
+}
+
+.detail-golf .detail-content {
+	align-self: flex-start;
+	padding: 45px 30px 30px;
+	position: relative;
+}
+
+.detail-golf .detail-content .detail-close {
+	font-size: 1.6em;
+	color: var(--bs-black);
+	top: 15px;
+	right: 15px;
+	position: absolute;
+	z-index: 2;
+}
+
+.detail-golf .detail-content .detail-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.detail-golf .detail-content .detail-heading .detail-name {
+	font-size: 1.45em;
+	color: var(--bs-black);
+	font-weight: 600;
+}
+
+.detail-golf .detail-content .detail-heading .detail-size {
+	font-size: 1.6em;
+	color: var(--bs-black);
+	font-weight: 600;
+}
+
+.detail-golf .detail-content .detail-desc {
+	margin-top: 30px;
+	font-size: 1.075em;
+	color: var(--bs-black);
+}
+
+.detail-golf .detail-content .detail-teemarker {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.detail-golf .detail-content .detail-teemarker .detail-teemarker_item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 1.6em;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.detail-golf .detail-content .detail-teemarker .detail-teemarker_item .detail-teemarker_image {
+	flex-shrink: 0;
 }

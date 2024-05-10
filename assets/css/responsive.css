@@ -612,6 +612,37 @@
 		font-size: 1.15em;
 		padding: 10px 20px;
 	}
+
+	.detail-golf {
+		flex-direction: column;
+	}
+
+	.detail-golf .detail-image {
+		width: 100%;
+		height: 250px;
+	}
+
+	.detail-golf .detail-content {
+		padding: 30px 15px;
+	}
+
+	.detail-golf .detail-content .detail-close {
+		font-size: 1.3em;
+	}
+
+	.detail-golf .detail-content .detail-heading {
+		margin-top: 15px;
+		font-size: 0.925em;
+	}
+
+	.detail-golf .detail-content .detail-desc {
+		margin-top: 15px;
+		font-size: 1em;
+	}
+
+	.detail-golf .detail-content .detail-teemarker .detail-teemarker_item {
+		font-size: 1.225em;
+	}
 }
 
 @media screen and (max-width: 768px) {
